@@ -2,9 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import defaultImg from '../images/room-1.jpeg';
 import PropTypes from 'prop-types';
+
 export default function Room({room}) {
     const {images, name, price, slug} = room;
-    console.log(room);
     
     return (
         <article className="room">
@@ -18,7 +18,7 @@ export default function Room({room}) {
                     Features
                 </Link>
             </div>
-    <p className="room-info">{name}</p>
+            <p className="room-info">{name}</p>
         </article>
     )
 }

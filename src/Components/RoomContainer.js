@@ -11,13 +11,12 @@ const {loading,sortedRooms, rooms} = context;
 if (loading){
    return <Loading/>;
 }
-return (
-    <>
-        
-        <RoomsFilter rooms={rooms}/>
-        <RoomsList rooms={sortedRooms}/>
+   return (
+   <>
+      <RoomsFilter rooms={rooms}/>
+      <RoomsList rooms={sortedRooms}/>
    </>
-);
+   );
 }
 export default withRoomConsumer(RoomContainer);
 //export default function RoomContainer() {

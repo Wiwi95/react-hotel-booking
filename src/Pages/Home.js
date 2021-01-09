@@ -11,15 +11,14 @@ export default function Home() {
     return (
         <>
         <Hero hero="defaultHero">
-           <Banner title="Luxurious Rooms" subtitle="Delux rooms starting at $299">
-               
-           <Link className="btn-primary" to='/rooms'>Our Rooms</Link>
-            
-            </Banner>  
+          <Banner title="Luxurious Rooms" subtitle="Delux rooms starting at $299">
+              <Link className="btn-primary" to='/rooms'>
+                Our Rooms
+              </Link>
+          </Banner>  
         </Hero>
         <Services/>
         <FeaturedRooms/>
-       
       </>
     )
 }

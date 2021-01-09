@@ -9,9 +9,9 @@ import {RoomProvider} from './Context';
 ReactDOM.render(
   
     <RoomProvider>
-    <Router>
-    <App />
-    </Router>
+      <Router>
+        <App />
+      </Router>
     </RoomProvider>,
   
   document.getElementById('root')

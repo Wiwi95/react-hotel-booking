@@ -8,14 +8,14 @@ const Rooms = () => {
     return (
         <>
         <StyledHero img={defaultImg}>
-           <Banner title="Our Rooms">
-               <Link className="btn-primary" to='/'>Return Home</Link>
+            <Banner title="Our Rooms">
+                <Link className="btn-primary" to='/'>
+                    Return Home
+                </Link>
             </Banner> 
-                
-            
         </StyledHero>
         <RoomContainer/>
-      </>
+        </>
     )
 }
 
