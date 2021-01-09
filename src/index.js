@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
+import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {RoomProvider} from './Context';
 
 ReactDOM.render(
-  <React.StrictMode>
+  
+    <RoomProvider>
+    <Router>
     <App />
-  </React.StrictMode>,
+    </Router>
+    </RoomProvider>,
+  
   document.getElementById('root')
 );
 
